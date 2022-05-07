@@ -94,7 +94,8 @@ header{
   padding-inline:2rem;
   min-width:50vh;
   padding-block:1.5rem;
-  margin-inline:20px ;
+  margin-inline:20px ; 
+  background-image: url('star.svg');
   
 
 }
@@ -148,6 +149,7 @@ h1{
   font-size: var(--header1-size);
   margin: 0;
   font-family:var(--header-font) ;
+  color: #000000;
 }
 header .container, h1{
   line-height: 1;
@@ -172,7 +174,7 @@ nav ul li a{
 
 
 header .container p{
-  margin-block-end: 4rem;
+  margin-block-end: 5rem;
 }
 header .link-github{
   text-decoration: none;
@@ -337,8 +339,7 @@ li.profile-author::marker{
         border: 1px solid var(--header-color);
         min-height: 20vh;
         place-content: center;
-        
-       
+        background-image: url('star2.svg');
         min-width:50vh;
         padding-block:1.5rem;
         margin-block-end: 10rem;
