@@ -407,7 +407,7 @@ li.profile-author::marker{
       }
       .page-footer .container{
         margin: 5vh;
-        
+        max-width:60ch;
       }
       .page-footer .container li::marker{
         color:var(--border-underline) 
