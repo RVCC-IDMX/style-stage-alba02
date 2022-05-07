@@ -41,8 +41,20 @@ Refer to README.md for more information
    --nav-font-size:1.2rem;
    --header3-size:1.5rem;
    --container-font:1rem;
+   --white-:white;
  }
- 
+ /*prefers reduce motion accessibility */
+ @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
  body{
    background-color: var(--main-bg-color);
    line-height: 1.5;
@@ -171,7 +183,7 @@ nav ul li a{
   text-decoration: 2px underline var(--border-underline);
 
 }
-
+ 
 
 header .container p{
   margin-block-end: 5rem;
@@ -185,7 +197,13 @@ header .link-github{
  padding-block: 1rem;
  box-shadow: 4px 5px 1px 1px var(--lighter-orange);
 }
+header .link-github:hover {background-color:var(--white-)}
 
+header .link-github:active {
+  background-color: white;
+  box-shadow:4px 5px 1px 1px var(--lighter-orange);
+  transform: translateY(4px);
+}
 nav ul{
   font-size: var(--nav-font-size);
   background-color: var(--lighter-purple);
@@ -281,8 +299,17 @@ a.link-guidelines{
  font-size: var(--nav-font-size);
  font-weight: 500;
 }
+
+a.link-guidelines:hover {background-color:var(--white-)}
+
+a.link-guidelines:active {
+  background-color: white;
+  box-shadow:4px 5px 1px 1px var(--lighter-orange);
+  transform: translateY(4px);
+}
 a:not([class]) {
   text-underline-offset: 0.25em;
+  
 }
 
 article#guidelines{
@@ -356,6 +383,14 @@ li.profile-author::marker{
         box-shadow: 4px 5px 1px 1px var(--lighter-orange);
       
       }
+
+      #styles .container a[class]:hover {background-color:var(--white-)}
+
+      #styles .container a[class] :active {
+      background-color: white;
+      box-shadow:4px 5px 1px 1px var(--lighter-orange);
+      transform: translateY(4px);
+       }
       .page-footer{
         display: flex;
        
@@ -378,14 +413,4 @@ li.profile-author::marker{
         color:var(--border-underline) 
       }
 
-    /*prefers reduce motion accessibility */
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
+    
