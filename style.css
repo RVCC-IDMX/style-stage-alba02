@@ -389,9 +389,9 @@ li.profile-author::marker{
       }
       #styles .container a[class] {
         background-color: var(--lighter-purple);
+        box-shadow: 4px 5px 1px 1px var(--light-orange);
         padding:0.5rem;
         padding-block: 1rem;
-        box-shadow: 4px 5px 1px 1px var(--light-orange);
         font-weight: 500;
       
       }
