@@ -42,6 +42,8 @@ Refer to README.md for more information
    --header3-size:1.5rem;
    --container-font:1rem;
    --white-:white;
+   --light-orange-2:#e6b79978;
+  
  }
  /*prefers reduce motion accessibility */
  @media (prefers-reduced-motion: reduce) {
@@ -337,14 +339,23 @@ ol{
     width: 1px;
     line-height: 1.5;
 }
-
-.profile .container {
+.profile{
   display: grid;
   justify-items: center;
-  
  
 }
 
+.profile .container {
+
+  background-color: var(--light-orange-2);
+  padding-block: 2rem;
+  margin: 3vh;
+  max-width: 400px;
+  padding-inline:50px;
+  line-height: 3;
+  font-weight: 500;
+  
+}
 
 li.profile-title::marker{
 color:var(--border-underline) ;
@@ -380,7 +391,8 @@ li.profile-author::marker{
         background-color: var(--lighter-purple);
         padding:0.5rem;
         padding-block: 1rem;
-        box-shadow: 4px 5px 1px 1px var(--lighter-orange);
+        box-shadow: 4px 5px 1px 1px var(--light-orange);
+        font-weight: 500;
       
       }
 
@@ -394,8 +406,10 @@ li.profile-author::marker{
       .page-footer{
         display: flex;
        
-
       }
+       .page-footer p:first-of-type {
+         font-weight: 800;
+       }
       .page-footer {
         line-height: 2;
         box-sizing: content-box;
