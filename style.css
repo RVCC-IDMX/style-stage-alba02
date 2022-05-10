@@ -8,7 +8,7 @@ Below use @import to include one or more Google Fonts
 /*
 Below use @import to include one CSS reset or normalize stylesheet of your choice
 */
-@import 'normalize.css'; 
+@import 'https://raw.githubusercontent.com/alba02/stylestage-modern-stars/main/normalize.css';
 
 /*
 Make the embedded svg small enough so it does not to overtake the page
